@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="GET">
+        <h2>Texto</h2>
+        <label for="nombre">Nombres:</label>
+        <input type="text" 
+            name="nombre" 
+            id="nombre" 
+            maxlength="50"
+            placeholder="Escriba sus nombres completos">
+
+
+        <br><br>
+        <label for="apellido">Apellidos:</label>
+        <input type="text" 
+            name="apellido" 
+            id="apellido"
+            maxlength="50">
+
+        <H2>Contraseña</H2>
+        <label for="clave">Contraseña</label>
+        <input type="password" 
+            name="clave" id="clave" maxlength="12">
+
+        <h2>Area de texto</h2>
+        <textarea name="comentario" id="comenario" cols="30" rows="10"></textarea>
+
+        <h2>Spinner</h2>
+        <label for="spinner">Spinner</label>
+        <input type="number" name="spinner" id="spinner"
+            min="1" max="10" step="1" value="1">
+        
+        <h2>Fecha</h2>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <h2>Fecha-Hora</h2>
+        <label for="fecha_hora">Fecha-Hora:</label>
+        <input type="datetime-local" name="fecha_hora" id="fecha_hora">
+
+        <h2>Hora</h2>
+        <label for="hora">Hora</label>
+        <input type="time" name="hora" id="hora">
+
+        <h2>Semana</h2>
+        <label for="semana">Semana</label>
+        <input type="week" name="semana" id="semana">
+
+        <h2>Radio</h2>
+        <fieldset>
+            <legend>Genero:</legend>
+            <input type="radio" name="Genero" id="generoF" value="F" checked> 
+            <label for="generoF">Femenino</label>
+            <input type="radio" name="Genero" id="generoM" value="M">
+            <label for="generoM">Masculino</label>
+        </fieldset>
+
+        <h2>Lista desplegable</h2>
+        <label for="tipo_doc">Tipo de documento</label>
+        <select name="tipo_doc" id="tipo_doc">
+            <option value="TI">Tarjeta de indentidad</option>
+            <option value="CC" selected>Cedula de ciudadania</option>
+            <option value="CE">Cedula de extranjeria</option>
+
+        </select>
+
+        <h3>Adjuntar archivo</h3>
+        <label for="adjuntar">Archivo:</label>
+        <input type="file" name="adjuntar" id="adjuntar">
+
+
+        <h2>Boton Enviar</h2>
+        <input type="submit" value="Enviar">
+
+    </form>
+
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
